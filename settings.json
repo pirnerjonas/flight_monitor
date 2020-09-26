@@ -1,5 +1,5 @@
 {
   "to_airport": ["MUC", "ARN"],
   "from_airport": ["ARN", "MUC"],
-  "num_months": [1, 1]
+  "num_months": [4, 4]
 }
