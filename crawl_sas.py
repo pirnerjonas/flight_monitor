@@ -16,14 +16,15 @@ from random import choice
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-DATA_DIR = 'data/'
+PATH = '/home/pi/Documents/flight_monitor/'
+DATA_DIR = PATH + 'data/'
 
 # set up data folder
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
 # open settings file
-with open("settings.json") as json_data_file:
+with open(PATH + "settings.json") as json_data_file:
     settings = json.load(json_data_file)
 
 desktop_agents = ['Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36',
