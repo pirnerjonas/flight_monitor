@@ -110,7 +110,9 @@ def main():
             flight_return.to_csv(DATA_DIR + file_name, index=False)
             print('successfully wrote file {}'.format(file_name))
         else:
-            print(f'status code {flight_return.status_code}')
+            print('status code {}'.format(flight_return.status_code))
+
 
 if __name__ == "__main__":
     main()
+
